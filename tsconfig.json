@@ -17,7 +17,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "outDir": "./dist",
+    "outDir": "./docs",
     "jsx": "react-jsx",
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
