@@ -18,8 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "outDir": "./docs",
-    "jsx": "react-jsx",
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "jsx": "preserve",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"
+    ],
+    "noEmit": true
   },
   "include": [
     "src"
