@@ -21,18 +21,18 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
   }, [location, section]);
 
   const project1Images = [
-    "images/project1-1.jpg",
-    "images/project1-2.jpg",
-    "images/project1-3.jpg",
-    "images/project1-4.jpg",
-    "images/project1-5.jpg",
-    "images/project1-6.jpg",
-    "images/project1-7.jpg",
-    "images/project1-8.jpg"
+    "/images/project1-1.jpg",
+    "/images/project1-2.jpg",
+    "/images/project1-3.jpg",
+    "/images/project1-4.jpg",
+    "/images/project1-5.jpg",
+    "/images/project1-6.jpg",
+    "/images/project1-7.jpg",
+    "/images/project1-8.jpg"
   ];
 
   const project2Images = [
-    "images/project2-1.jpg"
+    "/images/project2-1.jpg"
   ];
 
   return (
