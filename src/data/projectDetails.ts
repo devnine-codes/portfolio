@@ -2,7 +2,7 @@ export const projectDetails = {
     "1": {
         title: "손비서 모바일앱 - ConfigManager 서비스",
         description: "손비서 모바일 애플리케이션은 AI비서가 전화를 대신 받아주고, 응대하며, 부재중 전화도 읽어주고, 통화녹음과 전화 내용 기록 기능을 제공합니다.",
-        period: "2024.07.05 ~ (11개월 ~ 지속적인 고도화 및 신규기능 추가)",
+        period: "2024.07.05 ~ 2024.08.14",
         technologies: "Spring Boot, MariaDB, REST API, AWS, Git, Jenkins, Docker (Docker Compose), IntelliJ IDEA",
         roles: [
             "시스템 설계 및 개발: 회원 및 AI 설정 관리, 내선번호 발급, BusinessTime 관리, AI 운용 조회 기능, Spring Boot Actuator 사용",

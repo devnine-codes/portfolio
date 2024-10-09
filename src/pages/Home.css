@@ -1,10 +1,12 @@
 .hero-section {
-    /* background-image: url('/images/hero-image.jpg'); */
-    background-size: cover;
-    background-position: center;
+    background: #1a1a1a;
+    background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(44, 44, 44, 0.8)), url('/images/hero.jpg');
+    background-size: cover; /* 이미지가 전체 배경을 덮도록 설정 */
+    background-position: center center; /* 이미지가 중앙에 위치 */
     color: white;
     text-align: center;
-    padding: 100px 0;
+    padding: 200px 0; /* 상하 패딩을 늘려 이미지가 더 많이 보이도록 설정 */
+    min-height: 600px; /* 섹션의 최소 높이를 설정해 이미지가 더 넓게 보이도록 */
     position: relative;
 }
 
@@ -24,6 +26,41 @@
     z-index: 2;
 }
 
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.hero-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px; /* 버튼과 텍스트 사이에 여백 추가 */
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -36,47 +73,123 @@
     margin: 0 auto 30px;
 }
 
+.about-section {
+    background: linear-gradient(135deg, #f7f9fa, #e9ecef);
+    padding: 80px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.about-row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
 .about-item {
-    margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 1 1 calc(33.33% - 40px); /* 3개씩 한 줄에 배치 */
+    max-width: 300px;
+    min-width: 220px; /* 작은 화면에서 최소 크기 설정 */
+}
+
+.about-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-icon {
+    color: #6c757d;
+    margin-bottom: 10px;
 }
 
 .about-item-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #495057;
+    text-transform: uppercase;
 }
 
 .about-item-text {
     font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
 }
 
+
 .skills-section {
-    background: linear-gradient(135deg, #e0e0e0, #f8f8f8);
-    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .skills-row {
-    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .skills-category {
-    border-right: 1px solid #ddd;
-    padding-right: 15px;
+    background: #222;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 220px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-category:last-child {
-    border-right: none;
+.skills-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.skills-category h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #00bcd4;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
 
 .skills-content {
-    font-family: monospace;
-    white-space: pre;
-    padding: 10px;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    padding: 0 10px;
 }
 
 .skills-content span {
     display: block;
-    margin-bottom: 8px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
 }
+
+.skills-content span:hover {
+    color: #00bcd4;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
 
 .project-card {
     transition: transform 0.2s;
@@ -103,6 +216,68 @@
 .contact-section .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+}
+
+.career-section {
+    background: #f3f4f6; /* 부드러운 그레이톤 배경 */
+    padding: 60px 20px;
+    color: #333;
+}
+
+.career-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.career-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 30px;
+}
+
+.career-dot {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: #6c757d; /* 차분한 회색 */
+    border-radius: 50%;
+}
+
+.career-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.career-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444; /* 차분한 톤 */
+}
+
+.career-duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.career-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .footer-section {

@@ -34,7 +34,7 @@ const CustomNavbar: React.FC = () => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
             <LinkContainer to="/">
-                <Navbar.Brand>My Portfolio</Navbar.Brand>
+                <Navbar.Brand>LDH Portfolio</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -43,7 +43,8 @@ const CustomNavbar: React.FC = () => {
                     <Nav.Link onClick={() => handleNavClick('about')}>About</Nav.Link>
                     <Nav.Link onClick={() => handleNavClick('skills')}>Skills</Nav.Link>
                     <Nav.Link onClick={() => handleNavClick('projects')}>Projects</Nav.Link>
-                    <Nav.Link onClick={() => handleNavClick('contact')}>Contact</Nav.Link>
+                    {/*<Nav.Link onClick={() => handleNavClick('contact')}>Contact</Nav.Link>*/}
+                    <Nav.Link onClick={() => handleNavClick('career')}>Career</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
