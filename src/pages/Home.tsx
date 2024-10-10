@@ -138,6 +138,7 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
               <div className="skills-category">
                 <h3><FontAwesomeIcon icon={faTools} /> DevOps & Infra</h3>
                 <div className="skills-content">
+                  <span>• Linux</span>
                   <span>• Jenkins (CI/CD)</span>
                   <span>• Docker & Docker Compose</span>
                   <span>• AWS ECS & CloudWatch</span>
