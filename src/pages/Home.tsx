@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import ProjectCarousel from '../components/ProjectCarousel';
 import './Home.css';
 import {LinkContainer} from "react-router-bootstrap";
+import { faVideo, faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
 const Home: React.FC<{ section?: string }> = ({ section }) => {
   const location = useLocation();
@@ -183,8 +184,15 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
                   <h3>손비서 모바일앱 - ConfigManager 서비스</h3>
                   <p>손비서 모바일 애플리케이션은 AI비서가 전화를 대신 받아주고, 응대하며, 부재중 전화도 읽어주고, 통화녹음과 전화 내용 기록 기능을 제공합니다.</p>
                   <LinkContainer to="/projects/1">
-                    <Button variant="secondary">README.md</Button>
+                    <Button className="readme-button" variant="secondary">README</Button>
                   </LinkContainer>
+                  <Button
+                      className="video-button"
+                      href="https://www.youtube.com/watch?v=m_xXK5-ZR5M"
+                      target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faVideo} /> 영상
+                  </Button>
                 </div>
               </Col>
               <Col md={6} className="my-3">
@@ -193,8 +201,15 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
                   <h3>외부 고객사 전산시스템 연동 (External-Communicator)</h3>
                   <p>외부 고객사의 전산에 데이터를 등록, 조회 및 수정하는 역할을 수행하며, AI 비서가 필요 정보를 취합하여 고객사의 전산에 등록하는 시스템입니다.</p>
                   <LinkContainer to="/projects/2">
-                    <Button variant="secondary">README.md</Button>
+                    <Button variant="secondary">README</Button>
                   </LinkContainer>
+                  <Button
+                      className="article-button"
+                      href="https://www.newsprime.co.kr/news/article/?no=647335"
+                      target="_blank"
+                  >
+                    <FontAwesomeIcon icon={faNewspaper} /> 관련기사
+                  </Button>
                 </div>
               </Col>
             </Row>
