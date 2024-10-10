@@ -39,7 +39,15 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
       <div>
         {/* Hero Section */}
         <Element name="home" id="home">
-          <div className="hero-section text-white text-center">
+          <div className="hero-section text-white text-center"
+               style={{
+                 backgroundImage: `linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(44, 44, 44, 0.8)), url(${process.env.PUBLIC_URL}/images/hero.jpg)`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center center',
+                 padding: '200px 0',
+                 minHeight: '600px',
+               }}
+          >
             <Container fluid>
               <h1 className="display-4">Backend Java 개발자 이동현 입니다.</h1>
               <p className="lead">

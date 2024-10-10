@@ -1,6 +1,6 @@
 .hero-section {
     background: #1a1a1a;
-    background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(44, 44, 44, 0.8)), url('/images/hero.jpg');
+    /*background-image: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(44, 44, 44, 0.8)), url('${process.env.PUBLIC_URL}/images/hero.jpg');*/
     background-size: cover; /* 이미지가 전체 배경을 덮도록 설정 */
     background-position: center center; /* 이미지가 중앙에 위치 */
     color: white;
