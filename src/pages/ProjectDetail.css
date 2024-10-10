@@ -48,5 +48,8 @@
 
 .back-button {
     display: block;
-    margin: 0 auto 20px;
+    margin: 50px auto 20px;
+    position: relative;
+    z-index: 2;
 }
+

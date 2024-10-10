@@ -38,7 +38,7 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
   return (
       <div>
         {/* Hero Section */}
-        <Element name="home">
+        <Element name="home" id="home">
           <div className="hero-section text-white text-center">
             <Container fluid>
               <h1 className="display-4">Backend Java 개발자 이동현 입니다.</h1>
@@ -84,7 +84,7 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
               <Col xs={12} sm={6} md={4} lg={4} className="text-center about-item">
                 <FontAwesomeIcon icon={faEnvelope} size="3x" className="mb-3 about-icon" />
                 <h5 className="about-item-title">이메일</h5>
-                <p className="about-item-text">lhidns.dev@gmail.com</p>
+                <p className="about-item-text">dev.nine0@gmail.com</p>
               </Col>
               <Col xs={12} sm={6} md={4} lg={4} className="text-center about-item">
                 <FontAwesomeIcon icon={faGraduationCap} size="3x" className="mb-3 about-icon" />

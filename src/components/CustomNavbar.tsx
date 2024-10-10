@@ -33,9 +33,7 @@ const CustomNavbar: React.FC = () => {
 
     return (
         <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-            <LinkContainer to="/">
-                <Navbar.Brand>LDH Portfolio</Navbar.Brand>
-            </LinkContainer>
+            <Navbar.Brand onClick={() => handleNavClick('home')}>LDH Portfolio</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
