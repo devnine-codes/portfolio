@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useLocation, useNavigate } from 'react-router-dom';
+import './CustomNavbar.css';
 
 const CustomNavbar: React.FC = () => {
     const location = useLocation();
@@ -29,6 +30,13 @@ const CustomNavbar: React.FC = () => {
                 });
             }
         }
+
+        // 모바일 모드에서 메뉴 클릭 시 네비게이션 셀렉트바 닫기
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse && navbarCollapse.classList.contains('show') && navbarToggler) {
+            (navbarToggler as HTMLElement).click(); // 토글 버튼을 클릭해서 자동으로 닫히도록 처리
+        }
     };
 
     return (
@@ -41,7 +49,6 @@ const CustomNavbar: React.FC = () => {
                     <Nav.Link onClick={() => handleNavClick('about')}>About</Nav.Link>
                     <Nav.Link onClick={() => handleNavClick('skills')}>Skills</Nav.Link>
                     <Nav.Link onClick={() => handleNavClick('projects')}>Projects</Nav.Link>
-                    {/*<Nav.Link onClick={() => handleNavClick('contact')}>Contact</Nav.Link>*/}
                     <Nav.Link onClick={() => handleNavClick('career')}>Career</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

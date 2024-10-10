@@ -1,0 +1,56 @@
+/* Custom Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #1a1a1a, #333333); /* 배경에 그라데이션 효과 */
+    border-bottom: 1px solid #444; /* 하단에 은은한 회색 라인 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 하단 그림자 */
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif; /* 폰트 변경 */
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #00bcd4; /* 브랜드 이름에 포인트 컬러 */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; /* 호버 시 전환 효과 */
+}
+
+.navbar-brand:hover {
+    color: #ffffff; /* 브랜드 이름 호버 시 흰색 */
+    transform: scale(1.1); /* 살짝 확대 효과 */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Lato', sans-serif; /* 폰트 변경 */
+    font-size: 1.1rem;
+    color: #e0e0e0; /* 기본 링크 색상 */
+    margin-right: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* 호버 시 전환 효과 */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bcd4; /* 링크 호버 시 색상 */
+    text-shadow: 1px 1px 2px rgba(0, 188, 212, 0.5); /* 호버 시 약간의 그림자 */
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%280%2C 188%2C 212%2C 1%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+    /* 토글 아이콘 색상 변경 */
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+}
+
+.ml-auto {
+    margin-left: auto !important;
+} /* ml-auto를 위한 추가 스타일링 */
