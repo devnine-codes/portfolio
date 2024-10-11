@@ -8,6 +8,7 @@ import ProjectCarousel from '../components/ProjectCarousel';
 import './Home.css';
 import {LinkContainer} from "react-router-bootstrap";
 import { faVideo, faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Home: React.FC<{ section?: string }> = ({ section }) => {
   const location = useLocation();
@@ -290,7 +291,17 @@ const Home: React.FC<{ section?: string }> = ({ section }) => {
           <Container fluid>
             <Row>
               <Col className="text-center py-3">
-                <p>© 2024 Lee Donghyeon. All Rights Reserved.</p>
+                <p>
+                  © 2024 Lee Donghyeon. All Rights Reserved.
+                  <a
+                      href="https://github.com/devnine-codes"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-link"
+                  >
+                    <i className="fa-brands fa-github github-icon"></i>
+                  </a>
+                </p>
               </Col>
             </Row>
           </Container>

@@ -326,11 +326,28 @@
     color: #333;
 }
 
+/* Footer Section Styling */
 .footer-section {
     background-color: #f8f9fa;
     padding: 20px 0;
+    text-align: center;
+    position: relative;
 }
 
 .footer-section p {
     margin: 0;
+    font-size: 1rem;
+    color: #333;
+    display: inline;
+}
+
+.footer-section .github-icon {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-section .github-icon:hover {
+    color: #90caf9;
 }
